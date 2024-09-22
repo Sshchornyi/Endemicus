@@ -137,6 +137,7 @@ async function fetchTextFile(filename) {
 
         const paragraphs = text.split('\r\n').filter(paragraph => paragraph.trim() !== '');
 
+        
         return paragraphs;
     } catch (error) {
         console.error(error);
