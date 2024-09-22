@@ -1,0 +1,61 @@
+h1 {
+    margin: 0;
+}
+
+h3 {
+    font-weight: normal;
+    margin: 10px 0px;
+}
+
+.page-heading-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: 80px;
+}
+
+.page-heading-box img {
+    -webkit-user-drag: none;
+}
+
+.page-heading-box img:last-child {
+    transform: scale(-1, -1);
+}
+
+.infopart {
+    margin-bottom: 30px;
+    display: block;
+}
+
+.infopart img {
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 11px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.371);
+    max-width: 400px;
+
+}
+
+
+.infosubpart {
+    margin-left: 0px;
+    margin-right: 10px;
+    flex-direction: column;
+    display: block;
+    text-align: justify;
+    line-height: 1.8em;
+
+}
+
+.infosubpart p {
+    text-indent: 5%;
+    margin: 0px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 110px;
+}
