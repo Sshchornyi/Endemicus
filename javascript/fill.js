@@ -3,6 +3,18 @@ const amphibian = [{
     name: "Пурпурова жаба",
     habitat: "Західні Гати, Індія",
     scientificName: "Nasikabatrachus sahyadrensis"
+}, {
+    name: "Золота жаба Мантела",
+    habitat: "Острів Мадагаскар",
+    scientificName: "Mantella aurantiaca"
+}, {
+    name: "Пуерториканська чубата жаба",
+    habitat: "Пуерто-Рико, США",
+    scientificName: "Peltophryne lemur"
+}, {
+    name: "Ліопельма Гамільтона",
+    habitat: "Нова Зеландія",
+    scientificName: "Leiopelma hamiltoni"
 }];
 
 const mammals = [
@@ -10,6 +22,10 @@ const mammals = [
         name: "Велика панда",
         habitat: "Сичуань/Тибет Китай",
         scientificName: "Ailuropoda melanoleuca"
+    },{
+        name: "Коала сірий",
+        habitat: "Австралія",
+        scientificName: "Phascolarctos cinereus"
     },
     {
         name: "Кенгуру рудий",
@@ -33,11 +49,6 @@ const mammals = [
         name: "Борнейський орангутан",
         habitat: "Острів Борнео/Калімантан, Південно-східна Азія",
         scientificName: "Pongo pygmaeus"
-    },
-    {
-        name: "Комодський варан",
-        habitat: "Острови Комодо,Рінджа, Падар, Гілі-Мотанг і Флорес, Індонезія",
-        scientificName: "Varanus komodoensis"
     },
     {
         name: "Карликова свиня",
@@ -65,6 +76,7 @@ const mammals = [
         scientificName: "Biswamoyopterus biswasi"
     }
 ];
+
 const birds = [{
     name: "Ківі",
     habitat: "Нова Зеландія",
@@ -73,12 +85,12 @@ const birds = [{
     name: "Какапо",
     habitat: "Нова Зеландія",
     scientificName: "Strigops habroptilus"
-},{
+}, {
     name: "Голуб гривастий",
     habitat: "Індія, Індонезія, Малайзія, М'янма, Палау, Папуа Нова Гвінея, Філіппіни, Соломонові Острови, Таїланд, В'єтнам, Камбоджа",
     scientificName: "Caloenas nicobarica"
 },
- {
+{
     name: "Імператорський пінгвін",
     habitat: "Антарктида",
     scientificName: "Aptenodytes forsteri"
@@ -87,24 +99,65 @@ const birds = [{
     habitat: "Острів Куба",
     scientificName: "Mellisuga helenae"
 }];
+
 const reptiles = [{
     name: "Бронзова змія Західних Гат",
     habitat: "Західні Гати, Індія",
     scientificName: "Ahaetulla perroteti"
+}, {
+    name: "Війковий (Чубатий) гекон",
+    habitat: "Австралія і Океанія",
+    scientificName: "Correlophus ciliatus"
+},{
+    name: "Філіппінська ящірка-вітрильник",
+    habitat: "Філіппіни",
+    scientificName: "Hydrosaurus pustulatus"
+},
+{
+    name: "Комодський варан",
+    habitat: "Острови Комодо,Рінджа, Падар, Гілі-Мотанг і Флорес, Індонезія",
+    scientificName: "Varanus komodoensis"
 }];
+
 const invertabrate = [{
     name: "Насіннєва муха Фонсека",
     habitat: "Шотландія, Сполучене королівство Великої Британії та Північної Ірландії",
     scientificName: "Botanophila fonsecai"
-}];
+},{
+    name: "Кошлатий земляний ткач",
+    habitat: "Англія, Сполучене королівство Великої Британії та Північної Ірландії",
+    scientificName: "Nothophantes horridus"
+},{
+    name: "Помаранчево-смугаста веснянка",
+    habitat: "Сполучене королівство Великої Британії та Північної Ірландії",
+    scientificName: "Perlodes mortoni"
+},{
+    name: "Ландійський капустяний жук-блішка",
+    habitat: "Острів Ланді, Сполучене королівство Великої Британії та Північної Ірландії",
+    scientificName: "Psylliodes luridipennis"
+},{
+    name: "Британська печерна криветка",
+    habitat: "Англія, Сполучене королівство Великої Британії та Північної Ірландії",
+    scientificName: "Niphargellus glenniei"
+}
+];
+
 const fish = [{
     name: "Хаплохроміс Нейререі",
     habitat: "Озеро Вікторія, Африка",
     scientificName: "Haplochromis nyererei"
-},{
+}, {
     name: "Латимерія коморська",
     habitat: "Східний і південний береги Африки",
     scientificName: "Latimeria chalumnae"
+}, {
+    name: "Діамантова тетра",
+    habitat: "Венесуела, Південна Америка",
+    scientificName: "Moenkhausia pittieri"
+}, {
+    name: "Діамантова тетра",
+    habitat: "Танганьїка, Африка",
+    scientificName: "Synodontis grandiops"
 }
 ];
 
@@ -137,7 +190,7 @@ async function fetchTextFile(filename) {
 
         const paragraphs = text.split('\r\n').filter(paragraph => paragraph.trim() !== '');
 
-        
+
         return paragraphs;
     } catch (error) {
         console.error(error);
