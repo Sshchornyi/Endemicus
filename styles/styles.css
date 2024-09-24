@@ -77,6 +77,7 @@ body {
 
 
 .container {
+    background-color: white;
     margin: 130px auto;
     margin-bottom: 200px;
     border-radius: 1px;
@@ -288,9 +289,8 @@ figcaption {
     background-color: var(--content-type-bg-color);
     border-top: 5px solid var(--content-type-border-color);
 }
-@media (max-width: 768px) {
+@media (max-width: 845px) {
 
-    /* Приховуємо всі посилання, крім головної */
     header a:not(.logo):not(.arrows) {
         display: none;
     }
@@ -303,3 +303,29 @@ figcaption {
         display:block;
     }
 }
+
+
+
+/* 
+.star {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(11, 174, 68);
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: float 5s ease-in-out infinite;
+    z-index: -10;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+} */
