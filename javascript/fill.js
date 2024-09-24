@@ -108,6 +108,10 @@ const reptiles = [{
     name: "Війковий (Чубатий) гекон",
     habitat: "Австралія і Океанія",
     scientificName: "Correlophus ciliatus"
+}, {
+    name: "Смарагдовий варан",
+    habitat: "Індонезія, Папуа Нова Гвінея",
+    scientificName: "Varanus prasinus"
 },{
     name: "Філіппінська ящірка-вітрильник",
     habitat: "Філіппіни",
