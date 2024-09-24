@@ -159,7 +159,7 @@ const fish = [{
     habitat: "Венесуела, Південна Америка",
     scientificName: "Moenkhausia pittieri"
 }, {
-    name: "Діамантова тетра",
+    name: "Synodontis grandiops",
     habitat: "Танганьїка, Африка",
     scientificName: "Synodontis grandiops"
 }
