@@ -10,7 +10,7 @@
 
     --header-a-color: #1b1b1b;
     --header-a-not-first-child-hover-bg-color: #1b1b1b;
-    --header-a-first: #54fdfd;
+    --header-a-first: #fff422;
     --header-a-second: #ff9717;
     --header-a-third: #f44ee6;
     --header-a-fourth: #2338d8;
@@ -306,12 +306,12 @@ figcaption {
 
 
 
-/* 
+
 .star {
     position: absolute;
     width: 10px;
     height: 10px;
-    background-color: rgb(11, 174, 68);
+    background-color: #0bae44;
     border-radius: 50%;
     opacity: 0.8;
     animation: float 5s ease-in-out infinite;
@@ -328,4 +328,4 @@ figcaption {
     100% {
         transform: translateY(0);
     }
-} */
+}
