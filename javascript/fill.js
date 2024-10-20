@@ -192,7 +192,7 @@ async function fetchTextFile(filename) {
         if (!response.ok) throw new Error(`Error fetching ${filename}.txt`);
         const text = await response.text();
 
-        const paragraphs = text.split('\r\n').filter(paragraph => paragraph.trim() !== '');
+        const paragraphs = text.split(/\r?\n/).filter(paragraph => paragraph.trim() !== '');
 
 
         return paragraphs;
